@@ -28,6 +28,8 @@ IntelliJ IDEA Community Edition 2023.1.1;
 
 ------------------------------------------------------------------------------------------
 
+![devops](https://github.com/carlosofpersia/entrevista-act/assets/3011876/7da51af3-9294-4a95-ab6b-24de051f9b42)
+
 Com o ambiente todo configurado, basta ir na raiz do projeto, abrir o gitbash e rodar os seguintes comandos:
 
 mvn clean install
@@ -67,5 +69,9 @@ curl --location --request GET 'http://localhost:8080/v1/statement/consolidated/2
 --header 'x-transaction-id: xxxx'
 
 
+-----------------------------------------------------------------
 
+Tabelas mapeadas:
+
+![tabela](https://github.com/carlosofpersia/entrevista-act/assets/3011876/8011087c-7f88-4863-a346-9604b459774f)
 

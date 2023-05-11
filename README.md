@@ -13,18 +13,29 @@ Projeto visa atender um fluxo simples de caixa de um comerciante onde o usuário
 
 Recursos necessários para o desenvolvimento do projeto:
 
-jdk-8.0.372.07-hotspot;
+  jdk-8.0.372.07-hotspot;
 
-apache-maven-3.9.1;
+  apache-maven-3.9.1;
 
-mysql-connector-java-5.1.7-bin;
+  mysql-connector-java-5.1.7-bin;
 
-Docker;
+  Docker;
 
-gitbash;
+  gitbash;
 
-IntelliJ IDEA Community Edition 2023.1.1;
+  IntelliJ IDEA Community Edition 2023.1.1;
 
+-------------------------------------------------------------------
+
+Padrões utilizados no projeto:
+
+  Inversão de Controle (IoC) e Injeção de Dependência (DI)
+
+  Padrão MVC
+
+  Padrão Repository
+
+  Padrão DTO (Mapper)
 
 ------------------------------------------------------------------------------------------
 

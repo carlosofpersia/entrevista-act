@@ -29,13 +29,15 @@ Recursos necessários para o desenvolvimento do projeto:
 
 Padrões utilizados no projeto:
 
-  Inversão de Controle (IoC) e Injeção de Dependência (DI)
+  Inversão de Controle (IoC) e Injeção de Dependência (DI);
 
-  Padrão MVC
+  Padrão MVC;
 
-  Padrão Repository
+  Padrão Repository;
 
-  Padrão DTO (Mapper)
+  Padrão DTO (Mapper);
+  
+  Sobre segurança todos os endpoints solicitam **Authorization** e **x-transaction-id**, podendo assim implantar qualquer controle via intercptions (JWT|OAUTH).
 
 ------------------------------------------------------------------------------------------
 

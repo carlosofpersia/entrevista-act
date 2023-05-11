@@ -11,17 +11,24 @@ Projeto visa atender um fluxo simples de caixa de um comerciante onde o usuário
 Recursos necessários para o desenvolvimento do projeto:
 
 jdk-8.0.372.07-hotspot;
+
 apache-maven-3.9.1;
+
 mysql-connector-java-5.1.7-bin;
+
 Docker;
+
 gitbash;
+
 IntelliJ IDEA Community Edition 2023.1.1;
+
 
 ------------------------------------------------------------------------------------------
 
 Com o ambiente todo configurado, basta ir na raiz do projeto, abrir o gitbash e rodar os seguintes comandos:
 
 mvn clean install
+
 docker compose up --build
 
 * Caso já tenha rodado o docker compose e tenha dado algum problema, deve-se apagar todas as configurações do docker do projeto;

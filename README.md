@@ -2,8 +2,11 @@
 Projeto Fluxo Caixa - JAVA
 
 Projeto visa atender um fluxo simples de caixa de um comerciante onde o usuário possui uma carteira digital;
+
   Listar usuários;
+  
   Realizar lançamentos Credito/Debito;
+  
   Relatório consolidado diário geral;
 
 ------------------------------------------------------------------------------------------

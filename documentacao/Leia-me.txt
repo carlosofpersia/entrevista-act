@@ -1,0 +1,106 @@
+
+
+
+
+git remote add origin https://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@github.com/carlosofpersia/entrevista-act.git
+git remote set-url origin https://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@github.com/carlosofpersia/entrevista-act.git
+
+
+
+
+
+
+
+
+JAVA jdk-8.0.372.07-hotspot
+Servidor Mysql5.7;
+
+Spring;
+Spring-Data-JPA;
+Lombok;
+Rest;
+
+Builder;
+Mapper;
+JPA entityManager;
+Injeção de dependencias;
+SOLID;
+Teste Uniários;
+Conceito de classe de Configuration para setups
+Spring Bean Naming Conventions
+
+
+
+https://github.com/spring-io/start.spring.io
+
+
+
+
+mvn clean install
+docker compose up --build
+
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+        Map map = new HashMap<>();
+        map.put("Data", localDate.format(formatter));
+
+
+docker pull mysql:latest
+docker pull mysql:5.7-debian
+docker run –-name mysql:5.7-debian -e MYSQL_ROOT_PASSWORD=1234 -d mysql:tag
+
+
+mysql -u root
+GRANT ALL PRIVILEGES ON *.* TO 'ROOT'@'localhost' IDENTIFIED BY '1234';
+mysql -u ROOT -p
+
+
+
+
+	@ManyToOne
+	@JoinColumn(nullable = false)
+	private Pedido pedido;
+
+
+	@OneToMany(mappedBy = "pedido")
+	private List<ItemPedido> itens = new ArrayList<>();
+
+
+
+docker compose up -d
+
+
+mysql -u root --password=1234 --database=entrevistaact  --execute='source ./0_init.sql;'
+
+docker exec -it container_id bash
+$ mysql -u root -p 1234
+source ./0_init.sql
+
+
+Comercio
+
+person
+	id
+	cd_tipo_pessoa
+	nome
+	fantasia
+	data
+
+enum type_person
+	cd
+	nome (FISICA|JURIDICA)
+	descricao (XXXX)
+
+enum type_expense
+	cd
+	nome (CREDITO|DEBITO)
+	descricao (XXXX)
+
+release (lançamento)
+	id
+	id_pessoa
+	cd_tipo_despesa
+	valor
+	data
+

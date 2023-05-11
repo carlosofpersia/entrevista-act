@@ -1,5 +1,5 @@
 # entrevista-act
-Projeto Fluxo Caixa - JAVA
+Projeto Fluxo Caixa - Docker(JAVA + Mysql)
 
 Projeto visa atender um fluxo simples de caixa de um comerciante onde o usuário possui uma carteira digital;
 

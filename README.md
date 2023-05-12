@@ -42,6 +42,7 @@ Padrões utilizados no projeto:
   Teste Uniários com Mockito;
   
   Cobertura de testes unitários com JACOCO;
+  
     .\employee-producer\target\site\jacoco\index.html
   
   Sobre segurança todos os endpoints solicitam **Authorization** e **x-transaction-id**, podendo assim implantar qualquer controle via intercptions (JWT|OAUTH).
@@ -54,7 +55,7 @@ Com o ambiente todo configurado, basta ir na raiz do projeto, abrir o gitbash e 
 
 mvn clean install
 
-docker compose up --build
+**docker compose up --build**
 
 * Caso já tenha rodado o docker compose e tenha dado algum problema, deve-se apagar todas as configurações do docker do projeto;
 * Caso não tenha o ambiente completo, bastar rodar "docker compose up --build" que deixei o projeto compilado na pasta target;

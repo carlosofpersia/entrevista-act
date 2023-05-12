@@ -8,7 +8,9 @@ git remote set-url origin https://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@githu
 
 
 
-
+jacoco
+mockito
+.\employee-producer\target\site\jacoco\index.html
 
 
 
@@ -40,31 +42,9 @@ mvn clean install
 docker compose up --build
 
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-
-        Map map = new HashMap<>();
-        map.put("Data", localDate.format(formatter));
-
-
 docker pull mysql:latest
 docker pull mysql:5.7-debian
 docker run –-name mysql:5.7-debian -e MYSQL_ROOT_PASSWORD=1234 -d mysql:tag
-
-
-mysql -u root
-GRANT ALL PRIVILEGES ON *.* TO 'ROOT'@'localhost' IDENTIFIED BY '1234';
-mysql -u ROOT -p
-
-
-
-
-	@ManyToOne
-	@JoinColumn(nullable = false)
-	private Pedido pedido;
-
-
-	@OneToMany(mappedBy = "pedido")
-	private List<ItemPedido> itens = new ArrayList<>();
 
 
 
@@ -75,7 +55,7 @@ mysql -u root --password=1234 --database=entrevistaact  --execute='source ./0_in
 
 docker exec -it container_id bash
 $ mysql -u root -p 1234
-source ./0_init.sql
+$ source ./0_init.sql
 
 
 Comercio

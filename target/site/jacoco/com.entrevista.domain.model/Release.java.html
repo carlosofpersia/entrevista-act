@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Release.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">employee-producer</a> &gt; <a href="index.source.html" class="el_package">com.entrevista.domain.model</a> &gt; <span class="el_source">Release.java</span></div><h1>Release.java</h1><pre class="source lang-java linenums">package com.entrevista.domain.model;
+
+import lombok.*;
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+@Getter
+<span class="nc" id="L11">@Setter</span>
+<span class="nc" id="L12">@AllArgsConstructor</span>
+<span class="fc" id="L13">@NoArgsConstructor</span>
+<span class="nc bnc" id="L14" title="All 14 branches missed.">@EqualsAndHashCode(onlyExplicitlyIncluded = true)</span>
+@Entity
+@Table(name=&quot;tbrelease&quot;, schema = &quot;entrevistaact&quot;)
+public class Release implements Serializable {
+
+    @EqualsAndHashCode.Include
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+<span class="nc" id="L22">    private Long id;</span>
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = &quot;id_person&quot;, nullable = false)
+<span class="nc" id="L26">    private Person person;</span>
+
+    @Column(name=&quot;cd_type_expense&quot;, nullable = false)
+<span class="nc" id="L29">    private String cdTypeExpense;</span>
+
+    @Column(name=&quot;vl_release&quot;)
+<span class="nc" id="L32">    private BigDecimal vlRelease;</span>
+
+    @Column(name = &quot;dt_create&quot;)
+<span class="nc" id="L35">    private LocalDateTime dtCreate;</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

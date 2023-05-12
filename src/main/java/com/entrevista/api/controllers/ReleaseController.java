@@ -3,6 +3,7 @@ package com.entrevista.api.controllers;
 import com.entrevista.api.model.input.ReleaseMapper;
 import com.entrevista.domain.service.InjectReleasesService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +22,7 @@ public class ReleaseController {
     ) {
 
         ReleaseMapper response = injectReleasesService.injectValue(releaseInput);
-        return ResponseEntity.ok().body(response);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
 }

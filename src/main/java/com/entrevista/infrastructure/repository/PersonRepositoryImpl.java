@@ -23,9 +23,8 @@ public class PersonRepositoryImpl implements PersonRepository {
 
     @Override
     public List<PersonMapper> list() {
-        TypedQuery<Person> query = this.entityManager.createQuery(
+        TypedQuery<Person> query = entityManager.createQuery(
                 " from Person ", Person.class);
-
         return modelMapper.map(query.getResultList(), List.class);
     }
 

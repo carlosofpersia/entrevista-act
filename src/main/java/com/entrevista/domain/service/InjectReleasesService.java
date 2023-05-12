@@ -14,10 +14,10 @@ import org.springframework.transaction.annotation.Transactional;
 public class InjectReleasesService {
 
     @Autowired
-    ReleaseRepository releaseRepository;
+    private ReleaseRepository releaseRepository;
 
     @Autowired
-    PersonRepository personRepository;
+    private PersonRepository personRepository;
 
     @Autowired
     private ModelMapper modelMapper;

@@ -1,0 +1,17 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+employee-producer,com.entrevista,SpringBootHelloWorldApplication,5,3,0,0,2,1,1,1,1,1
+employee-producer,com.entrevista.domain.model,Person,114,3,14,0,8,1,21,1,14,1
+employee-producer,com.entrevista.domain.model,Release,114,3,14,0,8,1,21,1,14,1
+employee-producer,com.entrevista.infrastructure.repository,PersonRepositoryImpl,24,0,0,0,4,0,3,0,3,0
+employee-producer,com.entrevista.infrastructure.repository,ReleaseRepositoryImpl,23,9,0,0,4,2,1,2,1,2
+employee-producer,com.entrevista.domain.service,StatementsService,22,26,2,0,4,7,2,2,1,2
+employee-producer,com.entrevista.domain.service,InjectReleasesService,27,3,0,0,4,1,1,1,1,1
+employee-producer,com.entrevista.api.model.input,PersonMapper,17,0,0,0,4,0,5,0,5,0
+employee-producer,com.entrevista.api.model.input,StatementConsolidatedMapper,6,11,0,0,2,2,2,3,2,3
+employee-producer,com.entrevista.api.model.input,ReleaseMapper,35,6,0,0,5,3,10,1,10,1
+employee-producer,com.entrevista.api.controllers,PersonController,0,11,0,0,0,3,0,2,0,2
+employee-producer,com.entrevista.api.controllers,StatementController,0,12,0,0,0,3,0,2,0,2
+employee-producer,com.entrevista.api.controllers,ReleaseController,0,13,0,0,0,3,0,2,0,2
+employee-producer,com.entrevista.domain.enumarations,TypePersonEnum,17,67,0,0,0,13,2,6,2,6
+employee-producer,com.entrevista.domain.enumarations,TypeExpenseEnum,17,67,0,0,0,13,2,6,2,6
+employee-producer,com.entrevista.core.modelmapper,ModelMapperConfig,0,9,0,0,0,3,0,2,0,2

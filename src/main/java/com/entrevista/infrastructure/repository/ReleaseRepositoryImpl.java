@@ -31,7 +31,7 @@ public class ReleaseRepositoryImpl implements ReleaseRepository {
     @Override
     public List<Release> statementConsolidated(LocalDate localDate) {
 
-        TypedQuery<Release> query = this.entityManager.createQuery(
+        TypedQuery<Release> query = entityManager.createQuery(
                 " from Release r WHERE r.dtCreate BETWEEN :start AND :end", Release.class);
         query.setParameter("start", localDate.atStartOfDay());
         query.setParameter("end", localDate.plusDays(1).atStartOfDay());

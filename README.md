@@ -37,6 +37,13 @@ Padrões utilizados no projeto:
 
   Padrão DTO (Mapper);
   
+  SOLID;
+  
+  Teste Uniários com Mockito;
+  
+  Cobertura de testes unitários com JACOCO;
+    .\employee-producer\target\site\jacoco\index.html
+  
   Sobre segurança todos os endpoints solicitam **Authorization** e **x-transaction-id**, podendo assim implantar qualquer controle via intercptions (JWT|OAUTH).
 
 ------------------------------------------------------------------------------------------
@@ -87,4 +94,10 @@ curl --location --request GET 'http://localhost:8080/v1/statement/consolidated/2
 Tabelas mapeadas:
 
 ![tabela](https://github.com/carlosofpersia/entrevista-act/assets/3011876/8011087c-7f88-4863-a346-9604b459774f)
+
+
+Cobertura de Testes com JACOCO
+
+![testes-unitarios](https://github.com/carlosofpersia/entrevista-act/assets/3011876/dd802c6c-009b-4cc9-9e66-5b3453a37e68)
+
 

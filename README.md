@@ -49,8 +49,6 @@ Padrões utilizados no projeto:
 
 ------------------------------------------------------------------------------------------
 
-![devops](https://github.com/carlosofpersia/entrevista-act/assets/3011876/7da51af3-9294-4a95-ab6b-24de051f9b42)
-
 Com o ambiente todo configurado, basta ir na raiz do projeto, abrir o gitbash e rodar os seguintes comandos:
 
 mvn clean install
@@ -59,6 +57,7 @@ mvn clean install
 
 * Caso já tenha rodado o docker compose e tenha dado algum problema, deve-se apagar todas as configurações do docker do projeto;
 * Caso não tenha o ambiente completo, bastar rodar "docker compose up --build" que deixei o projeto compilado na pasta target;
+* 
 ------------------------------------------------------------------------------------------
 
 Para testar o projeto segue exemplos práticos via CURL:
@@ -91,6 +90,16 @@ curl --location --request GET 'http://localhost:8080/v1/statement/consolidated/2
 
 
 -----------------------------------------------------------------
+
+Desenho processo Containerização:
+
+![devops](https://github.com/carlosofpersia/entrevista-act/assets/3011876/7da51af3-9294-4a95-ab6b-24de051f9b42)
+
+
+Configuração Intelij:
+
+![config-intelij](https://github.com/carlosofpersia/entrevista-act/assets/3011876/83f01de2-b074-470a-ae53-b43fd7cf87ca)
+
 
 Tabelas mapeadas:
 
